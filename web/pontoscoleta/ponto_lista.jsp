@@ -38,7 +38,7 @@
         <%
                 }
             } catch (Exception e) {
-                out.println("<tr><td colspan='6'>Erro: " + e.getMessage() + "</td></tr>");
+                out.println("<tr><td colspan='6'>Error: " + e.getMessage() + "</td></tr>");
             }
         %>
     </table>
