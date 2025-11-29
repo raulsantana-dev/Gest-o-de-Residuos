@@ -8,7 +8,7 @@
     <title>Cadastro de Veículos / Rotas</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
-<body>
+<body class="form-group">
 
 <%
     request.setCharacterEncoding("UTF-8");
@@ -54,13 +54,13 @@
     }
 %>
 
-<h1>Cadastro de Veículos / Rotas</h1>
+<h1 class="form-group">Cadastro de Veículos / Rotas</h1>
 
 <% if (msg != null) { %>
     <p><%= msg %></p>
 <% } %>
 
-<form method="post">
+<form class="form-group" method="post">
     Placa: <input type="text" name="placa" required><br><br>
     Capacidade (m³): <input type="number" step="0.01" name="capacidadeM3"><br><br>
     Nome da rota: <input type="text" name="rotaNome"><br><br>

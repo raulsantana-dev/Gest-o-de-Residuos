@@ -95,7 +95,58 @@
     String vFreq        = (ponto != null) ? String.valueOf(ponto.getFrequenciaColetaDias()) : "";
 %>
 
+<div class="form-wrapper">
+
     <h1>Editar Ponto de Coleta</h1>
+
+    <form method="post">
+        
+        <div class="form-group">
+            <label>ID do ponto:</label>
+            <input type="text" name="id" required>
+        </div>
+
+        <div class="form-group">
+            <label>Nome do ponto:</label>
+            <input type="text" name="nomePonto" required>
+        </div>
+
+        <div class="form-group">
+            <label>Endereço:</label>
+            <input type="text" name="endereco" required>
+        </div>
+
+        <div class="form-group">
+            <label>Capacidade (kg):</label>
+            <input type="number" name="capacidadeKg" required>
+        </div>
+
+        <div class="form-group">
+            <label>Status:</label>
+            <select name="status">
+                <option value="ATIVO">ATIVO</option>
+                <option value="INATIVO">INATIVO</option>
+                <option value="SOBRECARGA">SOBRECARGA</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Frequência de coleta (dias):</label>
+            <input type="number" name="frequenciaColetaDias" required>
+        </div>
+
+        <button class="btn-sistema" name="acao" value="carregar">Carregar</button>
+        <button class="btn-sistema" name="acao" value="atualizar">Atualizar</button>
+
+    </form>
+
+    <div class="voltar-link">
+        <a href="index-coleta.html">Voltar</a>
+    </div>
+
+</div>
+
+<!--    <h1>Editar Ponto de Coleta</h1>
 
     <% if (mensagem != null && !mensagem.isEmpty()) { %>
         <p style="color:red;"><%= mensagem %></p>
@@ -120,11 +171,11 @@
         <label>Frequência de coleta (dias):</label>
         <input type="number" name="frequencia_coleta_dias" value="<%= vFreq %>"><br><br>
 
-        <!-- Dois botões na mesma tela: carregar e atualizar -->
+         Dois botões na mesma tela: carregar e atualizar 
         <input type="submit" name="acao" value="carregar">
         <input type="submit" name="acao" value="atualizar">
-    </form>
+    </form>-->
 
-    <p><a href="index.html">Voltar</a></p>
+<!--    <p><a href="index.html">Voltar</a></p>-->
 </body>
 </html>
